@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color: rgb(245, 243, 246);
+            padding: 40px;
+            
+        }
+        .nav1,.nav3{
+            width: 40%;
+        }
+
+        .nav1 ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+
+        }
+        .nav2 ul{
+            display: flex;
+            list-style: none;
+        }
+      
+       .namma {
+             color: orange; 
+             font-weight: bold;
+        }
+
+        .fruits {
+             color: darkgreen; 
+            font-weight: bold;
+        }
+        .nav3 ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+        }
+       .fullnav{
+        display: flex;
+        justify-content: space-evenly;
+       
+       }
+       .img-container img{
+        display: block;
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        /* position: sticky;
+        top: 5px; */
+       }
+       .img-content{
+        position: relative;
+        display: inline-block;
+        align-content: center;
+       }
+       .overlay-text{
+        position:absolute;
+        bottom: 650px;
+        left: 600px;
+        color: rgba(6, 0, 0, 0.997);
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-size:xx-large;
+       }
+       .button{
+         display: flex;
+        justify-content: space-evenly;
+        /* cursor: pointer;
+                padding: 5px 10px;
+                border: none;
+                 border-radius: 5px; 
+                color: beige;
+                font-weight: bold; */
+       }
+      .card{
+                height: 300px;
+                width: 200px;
+                box-shadow: #333;
+                box-shadow: 5px 5px 50px solid rgb(14, 14, 15);
+                text-align: center;
+            }
+            .card img{
+                height: 70%;
+                width: 100%;
+                /* flex-wrap: wrap; */
+                
+            }
+            .container1{
+                 display: flex;
+                 justify-content: center;
+                 gap:50px;   
+                 flex-wrap: wrap;
+                 padding: 50px;
+            }
+            .con {
+                display: flex;
+                justify-content: space-around;
+            }
+           .card button {
+                cursor: pointer;
+                padding: 5px 10px;
+                background-color: aquamarine;
+                border: none;
+                border-radius: 5px;
+                color: beige;
+                font-weight: bold;
+            } 
+            /* .footer {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 1px  solid #ccc;
+} */
+.footer {
+    background-color: #d9f0d8; 
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #bbb;
+    font-size: 14px;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="fullnav">
+        <nav class="nav1">
+            <ul>
+                <li>HOME</li>
+                <li>SHOP</li>
+                <li>CORPORATE SERVICE</li>
+                <li>BLOG</li>
+                <li>MORE</li>
+            </ul>
+        </nav>
+        <nav class="nav2">
+            <ul>
+                <!-- <li>NAMMA FRUITS</li> -->
+                 <li><span class="namma">NAMMA</span> <span class="fruits">FRUITS</span></li>
+            </ul>
+        </nav>
+        <nav class="nav3">
+
+            <ul>
+                <input type="search" placeholder="Search...">
+                <li>ADD TO CARD</li>
+                <li>LOGIN</li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="img-container">
+        <img src="bg2.jpg"alt="fruits basket">
+        <p class="overlay-text">Seasonal, Authentic & Exotic Fruits</p><br>
+        <br><br><br>
+        </div>
+        <div class="button">
+        <button>IMPORTED FRUITS</button>
+        <button>LOCAL FRUITS</button>
+        <button>FRESH BAR</button>
+        <button>DRY FRUITS</button>
+        </div>
+        <br><br><br><br>
+        <div class="con">
+            <p>SEASONAL FRUITS</p>
+        <div class="container1">
+        <div class="card">
+        <img src="https://static.wixstatic.com/media/943d2f_88d5670a2cc3464dbfded9937556640a~mv2.jpg/v1/fill/w_414,h_414,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/943d2f_88d5670a2cc3464dbfded9937556640a~mv2.jpg">
+        <p>Orange Nagpur-(500-1000g)<br>Rs.100.00</p>
+        <button>Out of Stock</button>
+        </div>
+        <div class="card">
+        <img src="https://static.wixstatic.com/media/943d2f_c9f1736adb644a8ea779aac8393606a8~mv2.jpg/v1/fill/w_414,h_414,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/943d2f_c9f1736adb644a8ea779aac8393606a8~mv2.jpg">
+        <p>Indian guava-(600g)<br>Rs.50.00</p>
+        <button>Out of Stock</button>
+        </div>
+        <div class="card">
+        <img src="https://static.wixstatic.com/media/943d2f_27140cd8afc84b6bbcd7f24bdc02bba1~mv2.jpg/v1/fill/w_414,h_414,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/943d2f_27140cd8afc84b6bbcd7f24bdc02bba1~mv2.jpg">
+        <p>Chiku-(900-1000g)<br>Rs.90.00</p>
+        <button>Add To Card</button>
+        </div>
+        <div class="card">
+        <img src="https://static.wixstatic.com/media/94982f_f3575952d74f4aee980738eea9bae16b~mv2.jpg/v1/fill/w_414,h_414,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/94982f_f3575952d74f4aee980738eea9bae16b~mv2.jpg">
+        <p>Apple-(500-1000g)<br>Rs.100.00</p>
+        <button>Out of Stock</button>
+        </div>
+        <div class="card">
+        <img src="https://static.wixstatic.com/media/943d2f_d23a64fbd3a34dedbd88c5aa7c21c0cc~mv2.jpg/v1/fill/w_414,h_414,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/943d2f_d23a64fbd3a34dedbd88c5aa7c21c0cc~mv2.jpg">
+        <p>Red Grapes-(500-1000g)<br>Rs.100.00</p>
+        <button>Out of Stock</button>
+        </div>
+        <div class="card">
+        <img src="https://static.wixstatic.com/media/943d2f_b45d622ce3b240ed908c8af788edccce~mv2.jpg/v1/fill/w_414,h_414,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/943d2f_b45d622ce3b240ed908c8af788edccce~mv2.jpg">
+        <p>Plums-(500-1000g)<br>Rs.100.00</p>
+        <button>Out of Stock</button>
+        </div>
+        <div class="card">
+        <img src="https://static.wixstatic.com/media/943d2f_0f2aeb5afbc447fd85014073f03f0ca1~mv2.jpg/v1/fill/w_413,h_414,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/943d2f_0f2aeb5afbc447fd85014073f03f0ca1~mv2.jpg">
+        <p>Mosambi-(500-1000g)<br>Rs.100.00</p>
+        <button>Out of Stock</button>
+        </div>
+        <div class="card">
+        <img src="https://static.wixstatic.com/media/943d2f_639b5bce79504deaab4dda74af14ced5~mv2.jpg/v1/fill/w_414,h_414,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/943d2f_639b5bce79504deaab4dda74af14ced5~mv2.jpg">
+        <p>Longan-(500-1000g)<br>Rs.100.00</p>
+        <button>Out of Stock</button>
+        </div>
+    </div>
+        
+</div>
+    </main>
+    <footer>
+    <div class="footer-section">
+        <h3>Download Our App</h3>
+        <p>Quick Links</p>
+        <p>Know More about Us</p>
+        <p>Visit Store</p>
+        <p>Let's Connect</p>
+        <p>Know our process</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Site Links</h3>
+        <p>Privacy Policy</p>
+        <p>Cancellation/Refund Policy</p>
+        <p>Terms & Conditions</p>
+        <p>Shipping Policy</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Follow Us</h3>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>LinkedIn</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Call us now: +91- 9563319999</p>
+        <p>Email: support@nammafruits.com</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Online Payment</h3>
+        <p>Visa card payments</p>
+        <p>UPI payments</p>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © 2025 | Namma Fruits</p>
+        <p>FSSAI certified: 21222194000749</p>
+    </div>
+    <!-- <p>&copy; 2025 Namma Fruits. All rights reserved.</p>
+    <p>Freshness you can trust, delivered to your doorstep.</p> -->
+</footer>
+</body>
+</html>

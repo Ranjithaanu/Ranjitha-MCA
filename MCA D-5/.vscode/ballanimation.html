@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*img:hover{
+            rotate:360deg;
+            cursor: pointer;
+            transition-duration: 10s;
+        }*/
+        img{
+            animation:ball 5s infinite;
+        }
+        @keyframes ball{
+            0%{
+                transform: translateY(-500px)rotate(180deg);
+            }
+            50%{
+                transform: translateY(500px)rotate(220deg);
+            }
+            75%{
+                transform: translateY(500px)rotate(320deg);
+            }
+            100%{
+                transform: translateY(500px)rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball">
+        <img src="vector-illustration-cartoon-boy-playing-colored-ball-toys_43633-2681.avif">
+    </div>
+</body>
+</html>
