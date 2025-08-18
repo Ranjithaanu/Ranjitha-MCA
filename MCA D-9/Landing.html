@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        background-color: rgb(185, 187, 166);
+            padding: 40px;
+            
+        }
+        .nav1,.nav3{
+            width: 40%;
+        }
+
+        .nav1 ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+
+        }
+        .nav2 ul{
+            display: flex;
+            list-style: none;
+        }
+      
+        .anime {
+             color: rgb(19, 3, 247); 
+             font-weight: bold;
+        }
+
+        .world {
+             color: rgb(229, 100, 247); 
+            font-weight: bold;
+        } 
+        .nav3 ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+        }
+       .fullnav{
+        display: flex;
+        justify-content: space-evenly;
+       
+       }
+       .card{
+                height: 300px;
+                width: 200px;
+                box-shadow: #333;
+                box-shadow: 5px 5px 50px solid rgb(14, 14, 15);
+                /* text-align: center; */
+            }
+            .card img{
+                height: 70%;
+                width: 100%;
+                /* flex-wrap: wrap; */
+                
+            }
+            .container1{
+                 display: flex;
+                 justify-content: center;
+                 gap:50px;   
+                 flex-wrap: wrap;
+                 padding: 50px;
+            }
+            .con {
+                display: flex;
+                justify-content: space-around;
+            }
+        #container{
+            transition-duration: 1s;
+            background-image:url('bg.jpeg');
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .mini{
+            position: absolute;
+            bottom: 0;
+            /* padding-left: 0%; */
+        }
+         .mini .active{
+            opacity: 1;
+
+        }
+        .mini img{
+            height: 10%;
+            width: 10%;
+            opacity: 0.5;
+            /* padding-top: 500px;
+            cursor: pointer; */
+        
+        }
+        .mini img:hover{
+            transform: scale(1.1);
+        }
+        .arrow img{
+            height: 200px;
+        }
+        #arrow1{
+            position: absolute;
+            top: 40% ;
+            left:0;
+            transform: rotateY(180deg);
+        }
+        #arrow2{
+            position: absolute;
+            top: 40% ;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="fullnav">
+        <nav class="nav1">
+            <ul>
+                <li>HOME</li>
+                <li>TV</li>
+                <li>MOVIES</li>
+                <li>SPORTS</li>
+                <li>MORE</li>
+            </ul>
+        </nav>
+        <nav class="nav2">
+            <ul>
+                <!-- <li>ANIME WORLD</li>  -->
+                <li><span class="anime">ANIME</span> <span class="world">WORLD</span></li>
+            </ul>
+        </nav>
+        <nav class="nav3">
+
+            <ul>
+                <input type="search" placeholder="Search...">
+                <li>DOWNLOAD</li>
+                <li>LOGIN</li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <div id="container">
+        <div class="arrow">
+            <img onclick="prev()" id="arrow1" src="https://eskipaper.com/files/icons/arrow-right.png" alt="loding">
+            <img onclick="next()" id="arrow2" src="https://eskipaper.com/files/icons/arrow-right.png" alt="loding">
+        </div>
+        <div class="mini">
+            <img onclick="change(0)"src="bg.jpeg">
+            <img src="img.jpg">
+            <img src="img1.webp">
+            <img src="img2.jpg">
+            <img src="img3.jpg">
+            <img src="img4.webp">
+            <!-- <img src="img5.jpg">
+            <img src="img6.jpg"> -->
+        </div>
+    </div>
+    <main>
+        <div class="con"><br><br>
+            <p><strong> Latest Releases</strong></p>
+            <br><br><br><br>
+        <div class="container1">
+        <div class="card">
+        <img src="https://th.bing.com/th?q=Most+Popular+Anime+Series&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=2&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247">
+        </div>
+        <div class="card">
+        <img src="https://th.bing.com/th?q=Horimiya&w=80&h=80&c=7&o=5&dpr=2&pid=1.7&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1">
+        </div>
+        <div class="card">
+        <img src="https://th.bing.com/th?q=Dr.+Stone+Season+2&w=80&h=80&c=7&o=5&dpr=2&pid=1.7&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1">
+        </div>
+        <div class="card">
+        <img src="https://th.bing.com/th?q=Re+Zero+Season+2&w=80&h=80&c=7&o=5&dpr=2&pid=1.7&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1">
+        </div>
+        <div class="card">
+        <img src="https://th.bing.com/th?q=Demon+Slayer+Movie&w=80&h=80&c=7&o=5&dpr=2&pid=1.7&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1">
+        </div>
+        <div class="card">
+        <img src="https://th.bing.com/th?q=The+Promised+Neverland+Season+2&w=80&h=80&c=7&o=5&dpr=2&pid=1.7&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1">
+        
+        </div>
+        <div class="card">
+        <img src="https://www.bing.com/th/id/OIP.0ZHJivkXldzUnLiboVKo2AHaEP?w=245&h=211&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2">
+        
+        </div>
+        <div class="card">
+        <img src="https://www.bing.com/th/id/OIP.eW4FoswNPg8QNpABlYQUXQHaEK?w=251&h=211&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2">
+        
+        </div>
+    </div>
+        
+</div>
+    </main>
+    <script src="./landing.js"></script>
+</body>
+</html>
